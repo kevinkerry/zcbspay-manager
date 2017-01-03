@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.zcbspay.platform.manager.system.dao.RoleFunctDAO;
 import com.zcbspay.platform.manager.system.service.RoleFunctService;
-@Service
+@Service("roleFunctService")
 public class RoleFunctServiceImpl implements RoleFunctService{
 
 	@Autowired

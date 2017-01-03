@@ -3,12 +3,14 @@ package com.zcbspay.platform.manager.system.dao.impl;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.stereotype.Repository;
+
 import com.zcbspay.platform.manager.dao.impl.HibernateBaseDAOImpl;
 import com.zcbspay.platform.manager.system.bean.OrganBean;
 import com.zcbspay.platform.manager.system.dao.OrganDAO;
 import com.zcbspay.platform.manager.system.pojo.PojoOrgan;
 
-
+@Repository
 public class OrganDAOImpl extends HibernateBaseDAOImpl<PojoOrgan> implements OrganDAO{
 	
 	public List<?> saveOrgan(OrganBean organ) {

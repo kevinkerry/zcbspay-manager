@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.zcbspay.platform.manager.system.bean.UserBean;
 import com.zcbspay.platform.manager.system.dao.UserDAO;
 import com.zcbspay.platform.manager.system.service.UserService;
-@Service
+@Service("userService")
 public class UserServiceImpl implements UserService {
 
 	@Autowired

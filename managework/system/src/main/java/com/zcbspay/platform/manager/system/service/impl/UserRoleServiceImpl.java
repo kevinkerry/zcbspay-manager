@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.zcbspay.platform.manager.system.dao.UserRoleDAO;
 import com.zcbspay.platform.manager.system.service.UserRoleService;
 
-@Service
+@Service("userRoleService")
 public class UserRoleServiceImpl implements UserRoleService {
 
 

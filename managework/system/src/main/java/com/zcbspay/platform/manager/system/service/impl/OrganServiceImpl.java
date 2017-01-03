@@ -11,7 +11,7 @@ import com.zcbspay.platform.manager.system.dao.OrganDAO;
 import com.zcbspay.platform.manager.system.service.OrganService;
 
 
-@Service
+@Service("organService")
 public class OrganServiceImpl implements OrganService {
 	
 	@Autowired

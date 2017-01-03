@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.zcbspay.platform.manager.system.bean.ParaDicBean;
 import com.zcbspay.platform.manager.system.dao.ParaDicDAO;
 import com.zcbspay.platform.manager.system.service.ParaDicService;
-@Service
+@Service("paraDicService")
 public class ParaDicServiceImpl implements ParaDicService {
     
 	@Autowired

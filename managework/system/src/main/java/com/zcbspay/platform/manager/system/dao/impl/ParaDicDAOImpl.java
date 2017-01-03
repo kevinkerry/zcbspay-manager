@@ -2,12 +2,14 @@ package com.zcbspay.platform.manager.system.dao.impl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.zcbspay.platform.manager.dao.impl.HibernateBaseDAOImpl;
 import com.zcbspay.platform.manager.system.bean.ParaDicBean;
 import com.zcbspay.platform.manager.system.dao.ParaDicDAO;
 import com.zcbspay.platform.manager.system.pojo.PojoParaDic;
 
-
+@Repository
 public class ParaDicDAOImpl extends HibernateBaseDAOImpl<PojoParaDic> implements ParaDicDAO{
 	public List<?> getAllParaListByParaType(String paraType, String status) {
         String queryString = "";

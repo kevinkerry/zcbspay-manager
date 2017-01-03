@@ -3,12 +3,14 @@ package com.zcbspay.platform.manager.system.dao.impl;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.stereotype.Repository;
+
 import com.zcbspay.platform.manager.dao.impl.HibernateBaseDAOImpl;
 import com.zcbspay.platform.manager.system.bean.RoleBean;
 import com.zcbspay.platform.manager.system.dao.RoleDAO;
 import com.zcbspay.platform.manager.system.pojo.PojoRole;
 
-
+@Repository
 public class RoleDAOImpl extends HibernateBaseDAOImpl<PojoRole> implements RoleDAO{
 
 	public Map<String, Object> findRoleByPage(Map<String, Object> variables, int page,

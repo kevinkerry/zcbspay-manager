@@ -2,6 +2,7 @@ package com.zcbspay.platform.manager.system.dao.impl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.zcbspay.platform.manager.dao.impl.HibernateBaseDAOImpl;
@@ -9,7 +10,7 @@ import com.zcbspay.platform.manager.system.bean.UserBean;
 import com.zcbspay.platform.manager.system.dao.FunctionDAO;
 import com.zcbspay.platform.manager.system.pojo.PojoFunction;
 
-
+@Repository
 public class FunctionDAOImpl extends HibernateBaseDAOImpl<PojoFunction> implements FunctionDAO{
 	
 	@Transactional(readOnly=true)

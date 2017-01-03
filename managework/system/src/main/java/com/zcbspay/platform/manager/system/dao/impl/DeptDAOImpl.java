@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,7 +13,7 @@ import com.zcbspay.platform.manager.dao.impl.HibernateBaseDAOImpl;
 import com.zcbspay.platform.manager.system.bean.DeptBean;
 import com.zcbspay.platform.manager.system.dao.DeptDAO;
 import com.zcbspay.platform.manager.system.pojo.PojoDept;
-
+@Repository
 public class DeptDAOImpl extends HibernateBaseDAOImpl<PojoDept> implements DeptDAO{
 
 	private static final Logger log = LoggerFactory.getLogger(DeptDAOImpl.class);

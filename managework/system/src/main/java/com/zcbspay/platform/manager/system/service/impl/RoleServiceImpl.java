@@ -4,11 +4,12 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.zcbspay.platform.manager.system.bean.RoleBean;
 import com.zcbspay.platform.manager.system.dao.RoleDAO;
 import com.zcbspay.platform.manager.system.service.RoleService;
-
+@Service("roleService")
 public class RoleServiceImpl implements RoleService {
 
 	@Autowired
